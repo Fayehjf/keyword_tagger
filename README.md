@@ -69,21 +69,56 @@ python3 -m spacy download fr_core_news_sm
 python3 -m spacy download es_core_news_sm
 ```
 
-### 4️⃣ 启动 API 服务
+### 4️. 运行服务
+
+> 设置AI密匙
+
+在启动服务的同一个终端窗口中，运行以下命令：
+
+Mac / Linux (Zsh / Bash):
+
+```bash
+# 将 YOUR_API_KEY 替换为从 OpenAI 网站获取的密钥
+export OPENAI_API_KEY="YOUR_API_KEY"
+```
+
+Windows (CMD):
+
+```bash
+set OPENAI_API_KEY="YOUR_API_KEY"
+```
+processor.py 会自动从这个环境变量中读取密钥。
+
+> 启动API服务
+
+设置好密钥后，在同一个终端中运行：
 
 ```bash
 uvicorn app:app --reload
 ```
-
-访问 Swagger 自动文档：
-👉 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-
 ---
 
 ## 🧪 API 使用示例
 
-在 Swagger 或 Postman 中发送：
-![alt text](image.png)
+1. 启动服务：确保成功运行了 uvicorn
+
+2. 访问文档: 在浏览器中打开自动生成的 Swagger 文档
+
+👉 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+3. 展开接口: 点击绿色的 POST /tokenize-and-tag 栏，将其展开。
+
+4. 点击 "Try it out": 点击右上角的 "Try it out"（试一试）按钮，使请求体 (Request body) 变为可编辑状态。
+
+5. 粘贴请求: 在 "Request body" 中粘贴以下 JSON。
+
+这个例子包含了：
+
+haimont (品牌词, 假设它不在你的词典中, 将由 AI 标注)
+
+ランニングベスト (商品词, 假设它在你的 ja_products.txt 中)
+
+レディース (人群词, 假设它在你的 ja_people.txt 中)
 
 ```json
 {
@@ -92,8 +127,13 @@ uvicorn app:app --reload
 }
 ```
 
-返回 (假设词典已填充)：
-![alt text](image-1.png)
+6. 执行：点击蓝色的 "Execute" 按钮。
+
+7. 查看结果: 向下滚动到 "Responses" -> "Response body"。
+
+你将看到 AI 标注（haimont）会花费几秒钟时间，然后返回最终结果。
+
+返回结果：
 
 ```json
 {
@@ -114,47 +154,65 @@ uvicorn app:app --reload
 }
 ```
 
----
+0.99 置信度: 代表由词典 (.txt 文件) 高速匹配。
 
-## 🧠 关键实现策略
-
-### 固定搭配优先（核心要求）
-
-使用 PhraseMatcher 替代纯分词：
-
-如果词典命中 "ランニングベスト"，则不会被拆分成 "ランニング", "ベスト"。
+0.80 置信度: 代表由 AI 标注（结果较慢，成本较高）。
 
 ---
 
-### 多语言设计：不做自动检测
+## 🧠 关键实现策略与架构思考
 
-> 调用者必须在 API 请求中传递 `language` 参数。
+### 策略一：词典优先 (固定搭配)
 
-> 优势：避免语言检测错误; 避免加载无关模型; 提升速度
+> 使用 spaCy PhraseMatcher 优先识别词典短语（如 "15l"）。
+
+> 如果词典中能命中，则不会被 spaCy 的默认分词器拆分。
+
+---
+
+### 策略二：AI 备选 (处理未知词)
+
+> 对于PhraseMatcher未命中的词（如新品牌 "haimont"），API 会进入“循环2”。
+
+> 在这里，classify_unknown_token 函数 会被调用，它向 OpenAI API 发送一个上下文提示，以获取该词的标签。
+
+> 这样就解决了词典无法穷举所有新词的“冷启动”问题。
+
+---
+
+### 策略三：多语言设计 (不做自动检测)
+
+> 调用者必须在 API 请求中传递 language 参数。
+
+> 优势: 避免语言检测错误；避免加载无关模型；极大提升 API 速度。
 
 > processor.py 会根据 language 参数动态加载对应的 MODEL_MAP 模型和 dictionaries/ 词典。
 
 ---
 
-### 词典管理（AI与动态更新）
+### 策略四：词典管理（AI与动态更新）
 
-> Demo 策略（只读）：为保证 Demo 简洁和高性能，本项目采用只读词典。API 启动时将所有 .txt 词典加载到内存中，运行时只进行高速内存查询。。
+> Demo 策略（API 实时调用 AI）：
+
+* 为保证 Demo 能立即展示 AI 效果，本项目在 API 运行时实时调用 AI。
+
+* 缺点: 速度慢，成本高（每次都调用）。
 
 > Production 策略（读写分离）：
 
-* 需求文档提示“利用 AI 构建词典 + 可动态更新” [cite: 35-37]。
+* 需求文档提示“利用 AI 构建词典 + 可动态更新”。
 
-* 为此，一个生产级系统应增加一个管理工具（如 run_batch.py 脚本或 POST /admin/add-word 接口）。
+* 一个生产级系统应增加一个管理工具（如 run_batch.py 脚本）。
 
 * 该工具负责离线调用 AI 分析未知词汇，并将结果安全地写入 .txt 词典文件。
 
 * 写入后，通知主 API 重新加载词典。
 
-* 这样既实现了“动态更新”，又避免了 API 在高并发下写入文件导致I/O阻塞或数据损坏的风险。
+* 优势：这样既实现了“动态更新”，保证了 API 的高速响应（所有词都来自内存词典），又避免了 API 在高并发下写入文件导致I/O阻塞或数据损坏的风险，并极大降低了 AI 成本。
 
 ---
 
-## 🧱 Phase 2（架构权衡）：独立词典 vs. 统一实体
+## 🧱 架构权衡：独立词典 vs. 统一实体 (Phase 2 思考)
 
 > 当前架构 (独立词典):
 

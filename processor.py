@@ -59,7 +59,7 @@ def classify_unknown_token(token_text: str, original_keyword: str) -> str | None
     # 定义8个标签
     tag_list = "品牌词, 商品词, 人群词, 场景词, 颜色词, 尺寸词, 卖点词, 属性词"
     
-    # 精心设计的提示 (Prompt)
+    # Prompt
     prompt = (
         f"你是一个电商关键词分析师。\n"
         f"在商品标题 “{original_keyword}” 中, \n"
@@ -69,15 +69,13 @@ def classify_unknown_token(token_text: str, original_keyword: str) -> str | None
     )
     
     try:
-        # --- 在此调用你的 AI API (真实的 OpenAI 调用) ---
+        # --- 在此调用 AI API (真实的 OpenAI 调用) ---
         response = client.chat.completions.create(
-             model="gpt-3.5-turbo", # 你可以使用 "gpt-4o-mini" 等其他模型
+             model="gpt-3.5-turbo", 
              messages=[{"role": "user", "content": prompt}],
              temperature=0
         )
         ai_result = response.choices[0].message.content.strip()
-        
-        # (已删除模拟代码)
         
         if ai_result in tag_list:
             print(f"--- AI 标注成功: '{token_text}' -> '{ai_result}' ---")
@@ -107,7 +105,6 @@ def load_dictionaries(lang: str) -> Dict[str, Set[str]]:
     
     # 查找所有以 "ja_", "de_" 等开头的文件
     for f in dict_path.glob(f"{lang}_*.txt"):
-        # e.g., "ja_brands.txt" -> "brands"
         tag_key = f.stem.split('_', 1)[-1]
         pdf_tag_name = TAG_MAPPING.get(tag_key)
         
@@ -162,7 +159,7 @@ def get_matcher(lang: str, nlp: spacy.Language) -> PhraseMatcher:
 
     for tag_name, terms in lang_dicts.items():
         patterns = [nlp.make_doc(text) for text in terms]
-        matcher.add(tag_name, patterns) # 使用 tag_name 作为 KEY
+        matcher.add(tag_name, patterns) 
         
         for term in terms:
             term_tag_map[term.lower()] = tag_name
@@ -222,20 +219,39 @@ def tokenize_and_tag(keyword: str, language: str) -> Dict[str, Any]:
 
     # 循环2: 处理所有剩余的、未被固定搭配占用的 token
     for token in doc:
-        # 跳过已处理、标点或空格
         if token.i in seen_token_indices or token.is_punct or token.is_space:
             continue
         
         token_text = token.text.lower()
         
-        # (Demo 简化: 未匹配的词暂时不分配标签)
-        final_tokens.append(token_text)
-        tagged_token = {
-            "token": token_text,
-            "tags": [], # 在此可扩展, e.g. AI 标注
-            "confidence": 0.50 # 未知
-        }
-        tagged_tokens_list.append(tagged_token)
+        # AI 标注逻辑 
+        ai_tag = classify_unknown_token(token_text, keyword)
+        
+        if ai_tag:
+            # AI 成功识别
+            final_tokens.append(token_text)
+            tagged_token = {
+                "token": token_text,
+                "tags": [ai_tag], # 使用 AI 的结果
+                "confidence": 0.80 # 置信度 0.8 (低于词典的 0.99)
+            }
+            tagged_tokens_list.append(tagged_token)
+            
+            # (更新 tag_summary 的逻辑)
+            if ai_tag not in tag_summary:
+                tag_summary[ai_tag] = []
+            tag_summary[ai_tag].append(token_text)
+        
+        else:
+            # AI 失败或返回 'None'
+            final_tokens.append(token_text)
+            tagged_token = {
+                "token": token_text,
+                "tags": [],
+                "confidence": 0.50 # 仍然未知
+            }
+            tagged_tokens_list.append(tagged_token)
+
 
     # 3. 格式化为最终输出
     response = {
