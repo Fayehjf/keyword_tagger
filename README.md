@@ -107,13 +107,11 @@ python3 -m spacy download es_core_news_sm
 
 5. 粘贴请求: 在 "Request body" 中粘贴以下 JSON。
 
-
-
     这个例子包含了：
 
-        * 测试词典：reloj inteligente (商品词(智能手表), 在 es_products.txt 中)
+        测试词典：reloj inteligente (商品词(智能手表), 在 es_products.txt 中)
 
-        * 测试AI：mujer (人群词(女士), 不在 es_people.txt 中)
+        测试AI：mujer (人群词(女士), 不在 es_people.txt 中)
 
     ```json
     {
