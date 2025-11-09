@@ -3,7 +3,7 @@ from spacy.matcher import PhraseMatcher
 from spacy.tokens import Span
 import spacy.util
 from pathlib import Path
-from typing import Dict, Set, List, Any
+from typing import Dict, Set, List, Any, Union
 import os
 import openai
 
@@ -48,7 +48,7 @@ MODEL_MAP = {
 }
 
 # AI 调用
-def classify_unknown_token(token_text: str, original_keyword: str) -> str | None:
+def classify_unknown_token(token_text: str, original_keyword: str) -> Union[str, None]:
     """
     使用 AI 模型 (LLM) 来分类一个未知的 token。
     """

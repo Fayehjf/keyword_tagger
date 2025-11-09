@@ -1,0 +1,4168 @@
+[
+  {
+    "original_keyword": "ランニングベスト",
+    "tokens": [
+      "ランニングベスト"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニングベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ランニングベスト"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニングポーチ 腹巻きタイプ",
+    "tokens": [
+      "ランニング",
+      "ポーチ",
+      "腹巻き",
+      "タイプ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ポーチ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "腹巻き",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "タイプ",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ポーチ"
+      ],
+      "属性词": [
+        "腹巻き",
+        "タイプ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 リュック レディース",
+    "tokens": [
+      "リュック",
+      "レディース",
+      "登山"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 ショートパンツ レディース",
+    "tokens": [
+      "ショートパンツ",
+      "レディース",
+      "登山"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ショートパンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ショートパンツ"
+      ],
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレッキング リュック 軽量",
+    "tokens": [
+      "トレッキング",
+      "リュック",
+      "軽量"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレッキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "軽量",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トレッキング",
+        "リュック"
+      ],
+      "属性词": [
+        "軽量"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "running belt",
+    "tokens": [
+      "running",
+      "belt"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "running",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "belt",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "running"
+      ],
+      "商品词": [
+        "belt"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング ベスト",
+    "tokens": [
+      "ランニング ベスト"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング ベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ランニング ベスト"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ハイキング リュック レディース",
+    "tokens": [
+      "ハイキング",
+      "リュック",
+      "レディース"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ハイキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ハイキング",
+        "リュック"
+      ],
+      "人群词": [
+        "レディース"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニングザック",
+    "tokens": [
+      "ランニング",
+      "ザック"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ザック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ザック"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 リュック 軽量",
+    "tokens": [
+      "リュック",
+      "登山",
+      "軽量"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "軽量",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "属性词": [
+        "軽量"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ハイキング リュック 小さめ",
+    "tokens": [
+      "ハイキング",
+      "リュック",
+      "小さ",
+      "め"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ハイキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "小さ",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "め",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ハイキング",
+        "リュック"
+      ],
+      "尺寸词": [
+        "小さ",
+        "め"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 リュック 15l",
+    "tokens": [
+      "リュック",
+      "15l",
+      "登山"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "15l",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "尺寸词": [
+        "15l"
+      ],
+      "场景词": [
+        "登山"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング ベスト 夏",
+    "tokens": [
+      "ランニング ベスト",
+      "夏"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング ベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "夏",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ランニング ベスト"
+      ],
+      "场景词": [
+        "夏"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ハーフパンツ レディース",
+    "tokens": [
+      "レディース",
+      "ハーフ",
+      "パンツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ハーフ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "パンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "商品词": [
+        "ハーフ",
+        "パンツ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニングポーチ 伸縮",
+    "tokens": [
+      "ランニング",
+      "ポーチ",
+      "伸縮"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ポーチ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "伸縮",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ポーチ"
+      ],
+      "属性词": [
+        "伸縮"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニングポーチ 腹巻き",
+    "tokens": [
+      "ランニング",
+      "ポーチ",
+      "腹巻き"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ポーチ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "腹巻き",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ポーチ",
+        "腹巻き"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレラン ザック",
+    "tokens": [
+      "トレラン",
+      "ザック"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレラン",
+        "tags": [
+          "品牌词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ザック",
+        "tags": [
+          "品牌词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "品牌词": [
+        "トレラン",
+        "ザック"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ハイドレーション ベスト",
+    "tokens": [
+      "ハイドレーション",
+      "ベスト"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ハイドレーション",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "属性词": [
+        "ハイドレーション"
+      ],
+      "商品词": [
+        "ベスト"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 ハーフパンツ レディース",
+    "tokens": [
+      "レディース",
+      "登山",
+      "ハーフ",
+      "パンツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ハーフ",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "パンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "属性词": [
+        "ハーフ"
+      ],
+      "商品词": [
+        "パンツ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "スーツケースにつけるバッグ",
+    "tokens": [
+      "スーツケース",
+      "に",
+      "つける",
+      "バッグ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "スーツケース",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "に",
+        "tags": [],
+        "confidence": 0.5
+      },
+      {
+        "token": "つける",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "バッグ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "スーツケース",
+        "バッグ"
+      ],
+      "属性词": [
+        "つける"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニングベルト",
+    "tokens": [
+      "ランニング",
+      "ベルト"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ベルト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ベルト"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング ポーチ 腹巻き",
+    "tokens": [
+      "ランニング",
+      "ポーチ",
+      "腹巻き"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ポーチ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "腹巻き",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ポーチ"
+      ],
+      "属性词": [
+        "腹巻き"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 リュック 15リットル",
+    "tokens": [
+      "リュック",
+      "15リットル",
+      "登山"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "15リットル",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "尺寸词": [
+        "15リットル"
+      ],
+      "场景词": [
+        "登山"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング ハーフパンツ レディース",
+    "tokens": [
+      "レディース",
+      "ランニング",
+      "ハーフ",
+      "パンツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ハーフ",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "パンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "ランニング"
+      ],
+      "属性词": [
+        "ハーフ"
+      ],
+      "商品词": [
+        "パンツ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ハーフパンツ レディース スポーツ",
+    "tokens": [
+      "レディース",
+      "ハーフ",
+      "パンツ",
+      "スポーツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ハーフ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "パンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "スポーツ",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "商品词": [
+        "ハーフ",
+        "パンツ"
+      ],
+      "场景词": [
+        "スポーツ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング リュック",
+    "tokens": [
+      "リュック",
+      "ランニング"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "ランニング"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニングパンツ レディース",
+    "tokens": [
+      "レディース",
+      "ランニング",
+      "パンツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "パンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "パンツ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 リュック 小さめ",
+    "tokens": [
+      "リュック",
+      "登山",
+      "小さ",
+      "め"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "小さ",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "め",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "尺寸词": [
+        "小さ",
+        "め"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 短パン レディース",
+    "tokens": [
+      "レディース",
+      "登山",
+      "短パン"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "短パン",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "商品词": [
+        "短パン"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング ポーチ 腹巻きタイプ",
+    "tokens": [
+      "ランニング",
+      "ポーチ",
+      "腹巻き",
+      "タイプ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ポーチ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "腹巻き",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "タイプ",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ポーチ"
+      ],
+      "属性词": [
+        "腹巻き",
+        "タイプ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング リュック 5l",
+    "tokens": [
+      "リュック",
+      "5l",
+      "ランニング"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "5l",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "尺寸词": [
+        "5l"
+      ],
+      "场景词": [
+        "ランニング"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニングベルト 揺れない",
+    "tokens": [
+      "ランニング",
+      "ベルト",
+      "揺れ",
+      "ない"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ベルト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "揺れ",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ない",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ベルト"
+      ],
+      "属性词": [
+        "揺れ",
+        "ない"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニングベスト サロモン",
+    "tokens": [
+      "ランニングベスト",
+      "サロモン"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニングベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "サロモン",
+        "tags": [
+          "品牌词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ランニングベスト"
+      ],
+      "品牌词": [
+        "サロモン"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "リュック ランニング",
+    "tokens": [
+      "リュック",
+      "ランニング"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "ランニング"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "スーツケース バッグ 通せる",
+    "tokens": [
+      "スーツケース",
+      "バッグ",
+      "通せる"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "スーツケース",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "バッグ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "通せる",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "スーツケース",
+        "バッグ"
+      ],
+      "属性词": [
+        "通せる"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレッキングリュックレディース",
+    "tokens": [
+      "トレッキング",
+      "リュック",
+      "レディース"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレッキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トレッキング",
+        "リュック"
+      ],
+      "人群词": [
+        "レディース"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "hydration vest",
+    "tokens": [
+      "hydration",
+      "vest"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "hydration",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "vest",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "属性词": [
+        "hydration"
+      ],
+      "商品词": [
+        "vest"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレッキング リュック ケイリョウ",
+    "tokens": [
+      "トレッキング",
+      "リュック",
+      "ケイリョウ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレッキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ケイリョウ",
+        "tags": [
+          "品牌词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トレッキング",
+        "リュック"
+      ],
+      "品牌词": [
+        "ケイリョウ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング ポーチ 伸縮",
+    "tokens": [
+      "ランニング",
+      "ポーチ",
+      "伸縮"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ポーチ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "伸縮",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ポーチ"
+      ],
+      "属性词": [
+        "伸縮"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ハイキング リュック 15l",
+    "tokens": [
+      "ハイキング",
+      "リュック",
+      "15l"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ハイキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "15l",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ハイキング",
+        "リュック"
+      ],
+      "尺寸词": [
+        "15l"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 リュック 日帰り",
+    "tokens": [
+      "リュック",
+      "登山",
+      "日帰り"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "日帰り",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "登山",
+        "日帰り"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレイルランニング リュック",
+    "tokens": [
+      "リュック",
+      "トレイル",
+      "ランニング"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "トレイル",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "トレイル",
+        "ランニング"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング ベスト ナツ",
+    "tokens": [
+      "ランニング ベスト",
+      "ナツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング ベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ナツ",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ランニング ベスト"
+      ],
+      "场景词": [
+        "ナツ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング ベスト 揺れない",
+    "tokens": [
+      "ランニング ベスト",
+      "揺れ",
+      "ない"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング ベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "揺れ",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ない",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ランニング ベスト"
+      ],
+      "属性词": [
+        "揺れ",
+        "ない"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "レディース 登山 リュック",
+    "tokens": [
+      "レディース",
+      "リュック",
+      "登山"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "登山"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレッキング リュック レディース",
+    "tokens": [
+      "トレッキング",
+      "リュック",
+      "レディース"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレッキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トレッキング",
+        "リュック"
+      ],
+      "人群词": [
+        "レディース"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレッキング リュック 15l",
+    "tokens": [
+      "トレッキング",
+      "リュック",
+      "15l"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレッキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "15l",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トレッキング",
+        "リュック"
+      ],
+      "尺寸词": [
+        "15l"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング ベルト",
+    "tokens": [
+      "ランニング",
+      "ベルト"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ベルト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ベルト"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 リュック レディース 軽量",
+    "tokens": [
+      "リュック",
+      "レディース",
+      "登山",
+      "軽量"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "軽量",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "属性词": [
+        "軽量"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "アウトドア リュック 15l",
+    "tokens": [
+      "リュック",
+      "15l",
+      "アウトドア"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "15l",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "アウトドア",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "尺寸词": [
+        "15l"
+      ],
+      "场景词": [
+        "アウトドア"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニングベスト メンズ",
+    "tokens": [
+      "ランニングベスト",
+      "メンズ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニングベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "メンズ",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ランニングベスト"
+      ],
+      "人群词": [
+        "メンズ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ハイキングリュックレディース",
+    "tokens": [
+      "ハイキング",
+      "リュック",
+      "レディース"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ハイキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ハイキング",
+        "リュック"
+      ],
+      "人群词": [
+        "レディース"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "tran ランニング ポーチ",
+    "tokens": [
+      "tran",
+      "ランニング",
+      "ポーチ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "tran",
+        "tags": [
+          "品牌词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ポーチ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "品牌词": [
+        "tran"
+      ],
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "ポーチ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "マラソン リュック",
+    "tokens": [
+      "リュック",
+      "マラソン"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "マラソン",
+        "tags": [],
+        "confidence": 0.5
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング リュック 8l",
+    "tokens": [
+      "リュック",
+      "8l",
+      "ランニング"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "8l",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "尺寸词": [
+        "8l"
+      ],
+      "场景词": [
+        "ランニング"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "haimont ランニング リュック 揺れない",
+    "tokens": [
+      "haimont",
+      "リュック",
+      "ランニング",
+      "揺れ",
+      "ない"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "haimont",
+        "tags": [
+          "品牌词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "揺れ",
+        "tags": [
+          "卖点词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ない",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "品牌词": [
+        "haimont"
+      ],
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "ランニング"
+      ],
+      "卖点词": [
+        "揺れ"
+      ],
+      "属性词": [
+        "ない"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング リュック 小さめ",
+    "tokens": [
+      "リュック",
+      "ランニング",
+      "小さ",
+      "め"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "小さ",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "め",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "ランニング"
+      ],
+      "尺寸词": [
+        "小さ",
+        "め"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "レディース ハイキング リュック",
+    "tokens": [
+      "レディース",
+      "ハイキング",
+      "リュック"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ハイキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "商品词": [
+        "ハイキング",
+        "リュック"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレッキングリュック レディース",
+    "tokens": [
+      "トレッキング",
+      "リュック",
+      "レディース"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレッキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トレッキング",
+        "リュック"
+      ],
+      "人群词": [
+        "レディース"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレラン ベスト",
+    "tokens": [
+      "トレラン",
+      "ベスト"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレラン",
+        "tags": [
+          "品牌词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "品牌词": [
+        "トレラン"
+      ],
+      "商品词": [
+        "ベスト"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "リュック 小学生 女の子",
+    "tokens": [
+      "リュック",
+      "小学",
+      "生",
+      "女の子"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "小学",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "生",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "女の子",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "人群词": [
+        "小学",
+        "生",
+        "女の子"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "スポーツ 短パン レディース",
+    "tokens": [
+      "レディース",
+      "スポーツ",
+      "短パン"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "スポーツ",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "短パン",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "スポーツ"
+      ],
+      "商品词": [
+        "短パン"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "running vest",
+    "tokens": [
+      "running",
+      "vest"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "running",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "vest",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "running"
+      ],
+      "商品词": [
+        "vest"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング リュック 軽量",
+    "tokens": [
+      "リュック",
+      "ランニング",
+      "軽量"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "軽量",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "ランニング"
+      ],
+      "属性词": [
+        "軽量"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ハイキング リュック レディース 15l",
+    "tokens": [
+      "ハイキング",
+      "リュック",
+      "レディース",
+      "15l"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ハイキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "15l",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ハイキング",
+        "リュック"
+      ],
+      "人群词": [
+        "レディース"
+      ],
+      "尺寸词": [
+        "15l"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トートバッグ メンズ",
+    "tokens": [
+      "トート",
+      "バッグ",
+      "メンズ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トート",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "バッグ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "メンズ",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トート",
+        "バッグ"
+      ],
+      "人群词": [
+        "メンズ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ジョギング リュック",
+    "tokens": [
+      "リュック",
+      "ジョギング"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ジョギング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "ジョギング"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山ハーフパンツレディース",
+    "tokens": [
+      "レディース",
+      "登山",
+      "ハーフ",
+      "パンツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ハーフ",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "パンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "属性词": [
+        "ハーフ"
+      ],
+      "商品词": [
+        "パンツ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "バックパック 軽量 登山",
+    "tokens": [
+      "バックパック",
+      "軽量",
+      "登山"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "バックパック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "軽量",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "バックパック"
+      ],
+      "属性词": [
+        "軽量"
+      ],
+      "场景词": [
+        "登山"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ショートパンツ レディース スポーツ",
+    "tokens": [
+      "ショートパンツ",
+      "レディース",
+      "スポーツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ショートパンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "スポーツ",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ショートパンツ"
+      ],
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "スポーツ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "バックパック 登山 軽量",
+    "tokens": [
+      "バックパック",
+      "登山",
+      "軽量"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "バックパック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "軽量",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "バックパック"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "属性词": [
+        "軽量"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレッキングパンツ レディース",
+    "tokens": [
+      "トレッキング",
+      "レディース",
+      "パンツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレッキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "パンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トレッキング",
+        "パンツ"
+      ],
+      "人群词": [
+        "レディース"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "エエットベスト",
+    "tokens": [
+      "エエットベスト"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "エエットベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "エエットベスト"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "スーツケース サブバッグ 折畳み",
+    "tokens": [
+      "スーツケース",
+      "サブバッグ",
+      "折畳み"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "スーツケース",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "サブバッグ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "折畳み",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "スーツケース",
+        "サブバッグ"
+      ],
+      "属性词": [
+        "折畳み"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "リュック レディース ハイキング",
+    "tokens": [
+      "リュック",
+      "レディース",
+      "ハイキング"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ハイキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック",
+        "ハイキング"
+      ],
+      "人群词": [
+        "レディース"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング リュック オレンジ",
+    "tokens": [
+      "リュック",
+      "ランニング",
+      "オレンジ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "オレンジ",
+        "tags": [
+          "颜色词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "ランニング"
+      ],
+      "颜色词": [
+        "オレンジ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "軽量 バックパック 登山",
+    "tokens": [
+      "軽量",
+      "バックパック",
+      "登山"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "軽量",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "バックパック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "属性词": [
+        "軽量"
+      ],
+      "商品词": [
+        "バックパック"
+      ],
+      "场景词": [
+        "登山"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "小学生 リュック 女の子",
+    "tokens": [
+      "リュック",
+      "小学",
+      "生",
+      "女の子"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "小学",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "生",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "女の子",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "人群词": [
+        "小学",
+        "生",
+        "女の子"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニングりゅくサック",
+    "tokens": [
+      "ランニング",
+      "り",
+      "ゅ",
+      "く",
+      "サック"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "り",
+        "tags": [],
+        "confidence": 0.5
+      },
+      {
+        "token": "ゅ",
+        "tags": [],
+        "confidence": 0.5
+      },
+      {
+        "token": "く",
+        "tags": [],
+        "confidence": 0.5
+      },
+      {
+        "token": "サック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ランニング"
+      ],
+      "商品词": [
+        "サック"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "スーツケース サブバッグ 通せる",
+    "tokens": [
+      "スーツケース",
+      "サブバッグ",
+      "通せる"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "スーツケース",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "サブバッグ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "通せる",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "スーツケース",
+        "サブバッグ"
+      ],
+      "属性词": [
+        "通せる"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 レディース ハーフパンツ",
+    "tokens": [
+      "レディース",
+      "登山",
+      "ハーフ",
+      "パンツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ハーフ",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "パンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "属性词": [
+        "ハーフ"
+      ],
+      "商品词": [
+        "パンツ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山リュックレディース",
+    "tokens": [
+      "リュック",
+      "レディース",
+      "登山"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "マラソン ベスト",
+    "tokens": [
+      "マラソン",
+      "ベスト"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "マラソン",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "マラソン",
+        "ベスト"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "リュック 小学生",
+    "tokens": [
+      "リュック",
+      "小学",
+      "生"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "小学",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "生",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "人群词": [
+        "小学",
+        "生"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "リュック 登山 小さめ",
+    "tokens": [
+      "リュック",
+      "登山",
+      "小さ",
+      "め"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "小さ",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "め",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "尺寸词": [
+        "小さ",
+        "め"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "リュック ハイキング レディース",
+    "tokens": [
+      "リュック",
+      "ハイキング",
+      "レディース"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ハイキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック",
+        "ハイキング"
+      ],
+      "人群词": [
+        "レディース"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 パンツ レディース",
+    "tokens": [
+      "レディース",
+      "登山",
+      "パンツ"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "パンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "商品词": [
+        "パンツ"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレラン ザック ベスト",
+    "tokens": [
+      "トレラン",
+      "ザック",
+      "ベスト"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレラン",
+        "tags": [
+          "品牌词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ザック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "品牌词": [
+        "トレラン"
+      ],
+      "商品词": [
+        "ザック",
+        "ベスト"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレイルランニング ベスト",
+    "tokens": [
+      "ランニング ベスト",
+      "トレイル"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ランニング ベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "トレイル",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ランニング ベスト"
+      ],
+      "场景词": [
+        "トレイル"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "登山 リュック レディース 小さめ",
+    "tokens": [
+      "リュック",
+      "レディース",
+      "登山",
+      "小さ",
+      "め"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "小さ",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "め",
+        "tags": [
+          "尺寸词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ],
+      "尺寸词": [
+        "小さ",
+        "め"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ショートパンツ 登山 レディース",
+    "tokens": [
+      "ショートパンツ",
+      "レディース",
+      "登山"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ショートパンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "登山",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ショートパンツ"
+      ],
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "登山"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング リュック 揺れない",
+    "tokens": [
+      "リュック",
+      "ランニング",
+      "揺れ",
+      "ない"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "揺れ",
+        "tags": [
+          "卖点词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ない",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "场景词": [
+        "ランニング"
+      ],
+      "卖点词": [
+        "揺れ"
+      ],
+      "属性词": [
+        "ない"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ランニング ショートパンツ レディース",
+    "tokens": [
+      "ショートパンツ",
+      "レディース",
+      "ランニング"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ショートパンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ショートパンツ"
+      ],
+      "人群词": [
+        "レディース"
+      ],
+      "场景词": [
+        "ランニング"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレッキング リュック 日帰り",
+    "tokens": [
+      "トレッキング",
+      "リュック",
+      "日帰り"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレッキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "日帰り",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トレッキング",
+        "リュック"
+      ],
+      "场景词": [
+        "日帰り"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレッキング 短パン レディース",
+    "tokens": [
+      "トレッキング",
+      "レディース",
+      "短パン"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレッキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "短パン",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トレッキング",
+        "短パン"
+      ],
+      "人群词": [
+        "レディース"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ハイキング リュック 軽量",
+    "tokens": [
+      "ハイキング",
+      "リュック",
+      "軽量"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ハイキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "軽量",
+        "tags": [
+          "属性词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "ハイキング",
+        "リュック"
+      ],
+      "属性词": [
+        "軽量"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレイルランニング ザック",
+    "tokens": [
+      "トレイル",
+      "ランニング",
+      "ザック"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレイル",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ランニング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ザック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "トレイル",
+        "ランニング"
+      ],
+      "商品词": [
+        "ザック"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "リュック 小学生 男の子",
+    "tokens": [
+      "リュック",
+      "小学",
+      "生",
+      "男の子"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "リュック",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "小学",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "生",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "男の子",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "リュック"
+      ],
+      "人群词": [
+        "小学",
+        "生",
+        "男の子"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "トレッキング ショートパンツ レディース",
+    "tokens": [
+      "トレッキング",
+      "ショートパンツ",
+      "レディース"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "トレッキング",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "ショートパンツ",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.99
+      },
+      {
+        "token": "レディース",
+        "tags": [
+          "人群词"
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "tag_summary": {
+      "商品词": [
+        "トレッキング",
+        "ショートパンツ"
+      ],
+      "人群词": [
+        "レディース"
+      ]
+    },
+    "language_code": "ja"
+  },
+  {
+    "original_keyword": "ジョギング ベスト",
+    "tokens": [
+      "ジョギング",
+      "ベスト"
+    ],
+    "tagged_tokens": [
+      {
+        "token": "ジョギング",
+        "tags": [
+          "场景词"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "token": "ベスト",
+        "tags": [
+          "商品词"
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "tag_summary": {
+      "场景词": [
+        "ジョギング"
+      ],
+      "商品词": [
+        "ベスト"
+      ]
+    },
+    "language_code": "ja"
+  }
+]

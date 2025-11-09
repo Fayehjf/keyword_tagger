@@ -24,40 +24,33 @@
 simple_tagger/
 ├── app.py                  # FastAPI 服务器（接口入口）
 ├── processor.py            # 核心处理逻辑：切词 + 标签标注
+├── run_batch.py            # 脚本1: 批量运行 CSV 并调用 API，生成 'batch_results.json'
+├── update_dictionaries.py  # 脚本2: 读取 results, 自动更新 dictionaries 文件夹
 ├── dictionaries/           # 所有语言的自定义词典 (.txt)
 ├── keywords.csv            # 需求方提供的测试数据
 └── requirements.txt        # Python 依赖
-```
-
-词典命名方式示例：
-
-```
-# dictionaries/
-ja_brands.txt        # 品牌（日语）
-ja_products.txt      # 商品词（日语）
-ja_sizes.txt         # 尺寸（日语）
-...
-de_brands.txt        # 品牌（德语）
 ```
 
 ---
 
 ## 🚀 安装 & 启动
 
-### 1️. 创建虚拟环境并激活
+### A 本地安装（仅需一次）
+
+#### 1️. 创建虚拟环境并激活
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 2️. 安装依赖
+#### 2️. 安装依赖
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️. 安装对应语言的 spaCy 模型
+#### 3️. 安装对应语言的 spaCy 模型
 
 项目依赖 keywords.csv 中出现的语言模型（ja / de / en / fr / es）：
 
@@ -69,9 +62,9 @@ python3 -m spacy download fr_core_news_sm
 python3 -m spacy download es_core_news_sm
 ```
 
-### 4️. 运行服务
+### B 运行服务（每次运行时执行）
 
-* 设置AI密匙
+1. 设置AI密匙
 
     在启动服务的同一个终端窗口中，运行以下命令：
 
@@ -89,7 +82,7 @@ python3 -m spacy download es_core_news_sm
     ```
     processor.py 会自动从这个环境变量中读取密钥。
 
-* 启动API服务
+2. 启动API服务
 
     设置好密钥后，在同一个终端中运行：
 
@@ -98,7 +91,9 @@ python3 -m spacy download es_core_news_sm
     ```
 ---
 
-## 🧪 API 使用示例
+## 🧪 测试方法一：手动API测试
+
+此方法用于快速测试单个关键词。
 
 1. 启动服务：确保成功运行了 uvicorn
 
@@ -108,22 +103,22 @@ python3 -m spacy download es_core_news_sm
 
 3. 展开接口: 点击绿色的 POST /tokenize-and-tag 栏，将其展开。
 
-4. 点击 "Try it out": 点击右上角的 "Try it out"（试一试）按钮，使请求体 (Request body) 变为可编辑状态。
+4. 点击 "Try it out": 使请求体 (Request body) 变为可编辑状态。
 
 5. 粘贴请求: 在 "Request body" 中粘贴以下 JSON。
 
+
+
     这个例子包含了：
 
-        * haimont (品牌词, 假设它不在你的词典中, 将由 AI 标注)
+        * 测试词典：reloj inteligente (商品词(智能手表), 在 es_products.txt 中)
 
-        * ランニングベスト (商品词, 假设它在你的 ja_products.txt 中)
-
-        * レディース (人群词, 假设它在你的 ja_people.txt 中)
+        * 测试AI：mujer (人群词(女士), 不在 es_people.txt 中)
 
     ```json
     {
-    "keyword": "haimont ランニングベスト レディース 15l",
-    "language": "ja"
+    "keyword": "reloj inteligente mujer",
+    "language": "es"
     }
     ```
 
@@ -131,34 +126,83 @@ python3 -m spacy download es_core_news_sm
 
 7. 查看结果: 向下滚动到 "Responses" -> "Response body"。
 
-    你将看到 AI 标注（haimont）会花费几秒钟时间，然后返回最终结果。
-
     返回结果：
 
     ```json
     {
-    "original_keyword": "haimont ランニングベスト レディース 15l",
-    "tokens": ["haimont", "ランニングベスト", "レディース", "15l"],
-    "tagged_tokens": [
-        {"token": "haimont", "tags": ["品牌词"], "confidence": 0.95},
-        {"token": "ランニングベスト", "tags": ["商品词"], "confidence": 0.90},
-        {"token": "レディース", "tags": ["人群词"], "confidence": 0.95},
-        {"token": "15l", "tags": ["尺寸词"], "confidence": 0.99}
-    ],
-    "tag_summary": {
-        "品牌词": ["haimont"],
-        "商品词": ["ランニングベスト"],
-        "人群词": ["レディース"],
-        "尺寸词": ["15l"]
-    }
+        "original_keyword": "reloj inteligente mujer",
+        "tokens": [
+            "reloj inteligente",
+            "mujer"
+        ],
+        "tagged_tokens": [
+            {
+            "token": "reloj inteligente",
+            "tags": [
+                "商品词"
+            ],
+            "confidence": 0.99
+            },
+            {
+            "token": "mujer",
+            "tags": [
+                "人群词"
+            ],
+            "confidence": 0.8
+            }
+        ],
+        "tag_summary": {
+            "商品词": [
+            "reloj inteligente"
+            ],
+            "人群词": [
+            "mujer"
+            ]
+        }
     }
     ```
 
     0.99 置信度: 代表由词典 (.txt 文件) 高速匹配。
 
-    0.80 置信度: 代表由 AI 标注（结果较慢，成本较高）。
+    0.80 置信度: 代表由 AI 标注。
 
 ---
+
+## 🤖 测试方法二：批量测试与词典更新 (核心工作流)
+
+**此方法是项目的核心，它实现了“AI 标注 -> 自动更新词典”的完整闭环。**
+
+1. 运行批量测试 (run_batch.py)
+
+    此脚本会读取 keywords.csv ，逐行调用 API，并（在需要时）触发 AI，最后将所有结果保存到 batch_results.json。
+
+    1. 确保 API 正在运行 (在终端 1 中, 且已设置 OPENAI_API_KEY)。
+
+    2. 打开第二个终端 (在 (venv) 环境中)。
+
+    3. 运行 run_batch.py:
+
+    ```bash
+    python3 run_batch.py
+    ```
+
+    4. 脚本会显示一个进度条。完成后，会得到一个含有 AI 标注结果 (0.80) 的 batch_results.json 文件。
+
+2. 运行词典更新 (update_dictionaries.py)
+
+    此脚本会读取 batch_results.json，找到所有被 AI 标注的新词，并自动将它们追加到 dictionaries/ 文件夹下对应的 .txt 文件中。
+
+    1. 在第二个终端中 (等 run_batch.py 运行完毕后)。
+
+    2. 运行 run_batch.py:
+
+    ```bash
+    python3 update_dictionaries.py
+    ```
+
+    3. 会看到成功的日志。
+
+3. 重启 API 以加载新词典
 
 ## 🧠 关键实现策略与架构思考
 
@@ -192,23 +236,18 @@ python3 -m spacy download es_core_news_sm
 
 ### 策略四：词典管理（AI与动态更新）
 
-* Demo 策略（API 实时调用 AI）：
+* 本项目通过 run_batch.py 和 update_dictionaries.py 实现了生产级的“读写分离”工作流。
 
-    1. 为保证 Demo 能立即展示 AI 效果，本项目在 API 运行时实时调用 AI。
+    * “读” (API): app.py 负责高速响应。它只从内存中读取词典。
 
-    2. 缺点: 速度慢，成本高（每次都调用）。
+    * “写” (离线脚本):
 
-* Production 策略（读写分离）：
+        1. run_batch.py 负责离线批量调用 AI 分析未知词汇。
 
-    1. 需求文档提示“利用 AI 构建词典 + 可动态更新”。
+        2. update_dictionaries.py 负责将 AI 结果安全地写入 .txt 词典文件。
 
-    2. 一个生产级系统应增加一个管理工具（如 run_batch.py 脚本）。
 
-    3. 该工具负责离线调用 AI 分析未知词汇，并将结果安全地写入 .txt 词典文件。
-
-    4. 写入后，通知主 API 重新加载词典。
-
-    5. 优势：这样既实现了“动态更新”，保证了 API 的高速响应（所有词都来自内存词典），又避免了 API 在高并发下写入文件导致I/O阻塞或数据损坏的风险，并极大降低了 AI 成本。
+* 优势: 保证了 API 的高速响应（所有词都来自内存词典），并极大降低了 AI 成本，符合“利用 AI 构建词典 + 可动态更新”的需求 。
 
 ---
 
