@@ -71,7 +71,7 @@ python3 -m spacy download es_core_news_sm
 
 ### 4️. 运行服务
 
-> 设置AI密匙
+* 设置AI密匙
 
 在启动服务的同一个终端窗口中，运行以下命令：
 
@@ -89,7 +89,7 @@ set OPENAI_API_KEY="YOUR_API_KEY"
 ```
 processor.py 会自动从这个环境变量中读取密钥。
 
-> 启动API服务
+* 启动API服务
 
 设置好密钥后，在同一个终端中运行：
 
@@ -112,51 +112,51 @@ uvicorn app:app --reload
 
 5. 粘贴请求: 在 "Request body" 中粘贴以下 JSON。
 
-这个例子包含了：
+    这个例子包含了：
 
-haimont (品牌词, 假设它不在你的词典中, 将由 AI 标注)
+    haimont (品牌词, 假设它不在你的词典中, 将由 AI 标注)
 
-ランニングベスト (商品词, 假设它在你的 ja_products.txt 中)
+    ランニングベスト (商品词, 假设它在你的 ja_products.txt 中)
 
-レディース (人群词, 假设它在你的 ja_people.txt 中)
+    レディース (人群词, 假设它在你的 ja_people.txt 中)
 
-```json
-{
-  "keyword": "haimont ランニングベスト レディース 15l",
-  "language": "ja"
-}
-```
+    ```json
+    {
+    "keyword": "haimont ランニングベスト レディース 15l",
+    "language": "ja"
+    }
+    ```
 
 6. 执行：点击蓝色的 "Execute" 按钮。
 
 7. 查看结果: 向下滚动到 "Responses" -> "Response body"。
 
-你将看到 AI 标注（haimont）会花费几秒钟时间，然后返回最终结果。
+    你将看到 AI 标注（haimont）会花费几秒钟时间，然后返回最终结果。
 
-返回结果：
+    返回结果：
 
-```json
-{
-  "original_keyword": "haimont ランニングベスト レディース 15l",
-  "tokens": ["haimont", "ランニングベスト", "レディース", "15l"],
-  "tagged_tokens": [
-    {"token": "haimont", "tags": ["品牌词"], "confidence": 0.95},
-    {"token": "ランニングベスト", "tags": ["商品词"], "confidence": 0.90},
-    {"token": "レディース", "tags": ["人群词"], "confidence": 0.95},
-    {"token": "15l", "tags": ["尺寸词"], "confidence": 0.99}
-  ],
-  "tag_summary": {
-    "品牌词": ["haimont"],
-    "商品词": ["ランニングベスト"],
-    "人群词": ["レディース"],
-    "尺寸词": ["15l"]
-  }
-}
-```
+    ```json
+    {
+    "original_keyword": "haimont ランニングベスト レディース 15l",
+    "tokens": ["haimont", "ランニングベスト", "レディース", "15l"],
+    "tagged_tokens": [
+        {"token": "haimont", "tags": ["品牌词"], "confidence": 0.95},
+        {"token": "ランニングベスト", "tags": ["商品词"], "confidence": 0.90},
+        {"token": "レディース", "tags": ["人群词"], "confidence": 0.95},
+        {"token": "15l", "tags": ["尺寸词"], "confidence": 0.99}
+    ],
+    "tag_summary": {
+        "品牌词": ["haimont"],
+        "商品词": ["ランニングベスト"],
+        "人群词": ["レディース"],
+        "尺寸词": ["15l"]
+    }
+    }
+    ```
 
-0.99 置信度: 代表由词典 (.txt 文件) 高速匹配。
+    0.99 置信度: 代表由词典 (.txt 文件) 高速匹配。
 
-0.80 置信度: 代表由 AI 标注（结果较慢，成本较高）。
+    0.80 置信度: 代表由 AI 标注（结果较慢，成本较高）。
 
 ---
 
@@ -164,92 +164,92 @@ haimont (品牌词, 假设它不在你的词典中, 将由 AI 标注)
 
 ### 策略一：词典优先 (固定搭配)
 
-> 使用 spaCy PhraseMatcher 优先识别词典短语（如 "15l"）。
+* 使用 spaCy PhraseMatcher 优先识别词典短语（如 "15l"）。
 
-> 如果词典中能命中，则不会被 spaCy 的默认分词器拆分。
+* 如果词典中能命中，则不会被 spaCy 的默认分词器拆分。
 
 ---
 
 ### 策略二：AI 备选 (处理未知词)
 
-> 对于PhraseMatcher未命中的词（如新品牌 "haimont"），API 会进入“循环2”。
+* 对于PhraseMatcher未命中的词（如新品牌 "haimont"），API 会进入“循环2”。
 
-> 在这里，classify_unknown_token 函数 会被调用，它向 OpenAI API 发送一个上下文提示，以获取该词的标签。
+* 在这里，classify_unknown_token 函数 会被调用，它向 OpenAI API 发送一个上下文提示，以获取该词的标签。
 
-> 这样就解决了词典无法穷举所有新词的“冷启动”问题。
+* 这样就解决了词典无法穷举所有新词的“冷启动”问题。
 
 ---
 
 ### 策略三：多语言设计 (不做自动检测)
 
-> 调用者必须在 API 请求中传递 language 参数。
+* 调用者必须在 API 请求中传递 language 参数。
 
-> 优势: 避免语言检测错误；避免加载无关模型；极大提升 API 速度。
+* 优势: 避免语言检测错误；避免加载无关模型；极大提升 API 速度。
 
-> processor.py 会根据 language 参数动态加载对应的 MODEL_MAP 模型和 dictionaries/ 词典。
+* processor.py 会根据 language 参数动态加载对应的 MODEL_MAP 模型和 dictionaries/ 词典。
 
 ---
 
 ### 策略四：词典管理（AI与动态更新）
 
-> Demo 策略（API 实时调用 AI）：
+* Demo 策略（API 实时调用 AI）：
 
-* 为保证 Demo 能立即展示 AI 效果，本项目在 API 运行时实时调用 AI。
+1. 为保证 Demo 能立即展示 AI 效果，本项目在 API 运行时实时调用 AI。
 
-* 缺点: 速度慢，成本高（每次都调用）。
+2. 缺点: 速度慢，成本高（每次都调用）。
 
-> Production 策略（读写分离）：
+* Production 策略（读写分离）：
 
-* 需求文档提示“利用 AI 构建词典 + 可动态更新”。
+1. 需求文档提示“利用 AI 构建词典 + 可动态更新”。
 
-* 一个生产级系统应增加一个管理工具（如 run_batch.py 脚本）。
+2. 一个生产级系统应增加一个管理工具（如 run_batch.py 脚本）。
 
-* 该工具负责离线调用 AI 分析未知词汇，并将结果安全地写入 .txt 词典文件。
+3. 该工具负责离线调用 AI 分析未知词汇，并将结果安全地写入 .txt 词典文件。
 
-* 写入后，通知主 API 重新加载词典。
+4. 写入后，通知主 API 重新加载词典。
 
-* 优势：这样既实现了“动态更新”，保证了 API 的高速响应（所有词都来自内存词典），又避免了 API 在高并发下写入文件导致I/O阻塞或数据损坏的风险，并极大降低了 AI 成本。
+5. 优势：这样既实现了“动态更新”，保证了 API 的高速响应（所有词都来自内存词典），又避免了 API 在高并发下写入文件导致I/O阻塞或数据损坏的风险，并极大降低了 AI 成本。
 
 ---
 
 ## 🧱 架构权衡：独立词典 vs. 统一实体 (Phase 2 思考)
 
-> 当前架构 (独立词典):
+* 当前架构 (独立词典):
 
-* ja_brands.txt 和 de_brands.txt 是完全独立的。
+1. ja_brands.txt 和 de_brands.txt 是完全独立的。
 
-* 优势: 100% 满足了 PDF 的需求（只要求输出标签 tags: ["品牌词"]）；架构简单；内存高效（API 只加载请求语言的词典）。
+2. 优势: 100% 满足了 PDF 的需求（只要求输出标签 tags: ["品牌词"]）；架构简单；内存高效（API 只加载请求语言的词典）。
 
-* 局限: 系统并不知道 Adidas (en) 和 アディダス (ja) 是同一个品牌实体。
+3. 局限: 系统并不知道 Adidas (en) 和 アディダス (ja) 是同一个品牌实体。
 
-> 统一 架构 (实体链接):
+* 统一 架构 (实体链接):
 
-* 这是一个关键的架构优化点。
+1. 这是一个关键的架构优化点。
 
-* 我们可以用一个统一的数据库（例如 brand_database.json）来取代独立的 .txt 文件。
+2. 我们可以用一个统一的数据库（例如 brand_database.json）来取代独立的 .txt 文件。
 
-* 这个数据库会存储一个规范名称（Canonical Name，如 "Adidas"）以及它在所有语言中的变体（Variants，如 "アディダス"），API 的返回结果将更加丰富  
+3. 这个数据库会存储一个规范名称（Canonical Name，如 "Adidas"）以及它在所有语言中的变体（Variants，如 "アディダス"），API 的返回结果将更加丰富  
 
-* 结论: 对于当前的 Demo，我们采用了更简单、直接的独立词典方案，因为它已完全满足需求文档。但“实体链接”是系统未来进行深度数据分析和扩展的关键。
+4. 结论: 对于当前的 Demo，我们采用了更简单、直接的独立词典方案，因为它已完全满足需求文档。但“实体链接”是系统未来进行深度数据分析和扩展的关键。
 
 
 ## ➕ 如何扩展支持新的语言 (如：意大利语 it)
 
 只需 3 步：
 
-### 1. 安装 spaCy 模型
+1. **安装 spaCy 模型**
 
 ```bash
 python3 -m spacy download it_core_news_sm
 ```
 
-### 2. 更新 processor.py 中的MODEL_MAP
+2. **更新 processor.py 中的MODEL_MAP**
 
 ```bash
 "it": "it_core_news_sm",
 ```
 
-### 3. 新建词典文件
+3. **新建词典文件**
 
 dictionaries/it_brands.txt
 dictionaries/it_products.txt
